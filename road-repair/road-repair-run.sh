@@ -1,5 +1,6 @@
 #!/bin/bash
 export OUTPUT_PATH="stdout"
+rm -f $OUTPUT_PATH
 echo "5
 5
 3
@@ -13,3 +14,6 @@ echo "5
 15
 1
 " | python3 road-repair.py
+
+cat $OUTPUT_PATH
+rm -f $OUTPUT_PATH
